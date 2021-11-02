@@ -108,11 +108,11 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  if(switch_state)
 	  {
-		  LED_ON;
+		  LL_GPIO_TogglePin(GPIOA,4);
 	  }
 	  else
 	  {
-		  LED_OFF;
+		  LL_GPIO_TogglePin(GPIOA,4);
 	  }
   }
   /* USER CODE END 3 */
