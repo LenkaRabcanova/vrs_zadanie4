@@ -108,11 +108,11 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  if(switch_state)
 	  {
-		  LL_GPIO_TogglePin(GPIOA,4);
+		  LL_GPIO_SetOutputPin(GPIOA,LL_GPIO_PIN_4);
 	  }
 	  else
 	  {
-		  LL_GPIO_TogglePin(GPIOA,4);
+		 LL_GPIO_ResetOutputPin(GPIOA,LL_GPIO_PIN_4);
 	  }
   }
   /* USER CODE END 3 */
